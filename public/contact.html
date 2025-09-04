@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <title>Contact Us - Number Plate Hub</title>
+  <meta name="description" content="Contact Number Plate Hub for inquiries and support.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/NumberPlateHub.css">
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    @media (max-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .contact-item {
+      background: var(--surface);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .contact-item h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header class="brandbar">
+    <div class="brand">
+      <div class="logo">NUMBER PLATE HUB</div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="wrap">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainmenu">☰</button>
+      <ul id="mainmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="installation.html">Installation</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>We're here to help with any questions or concerns you may have.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h2>Customer Support</h2>
+          <p>Phone: 1-800-NUMBER-PLATE</p>
+          <p>Email: support@numberplatehub.com</p>
+          <p>Hours: Monday-Friday, 9am-5pm</p>
+        </div>
+        
+        <div class="contact-item">
+          <h2>Business Inquiries</h2>
+          <p>Phone: 1-800-555-1234</p>
+          <p>Email: business@numberplatehub.com</p>
+          <p>Hours: Monday-Friday, 9am-5pm</p>
+        </div>
+        
+        <div class="contact-item">
+          <h2>Headquarters</h2>
+          <p>123 Vehicle Avenue</p>
+          <p>Registration City, RC 12345</p>
+          <p>United States</p>
+        </div>
+        
+        <div class="contact-item">
+          <h2>Service Centers</h2>
+          <p>Visit any of our service centers for in-person assistance.</p>
+          <p>Find your nearest location on our <a href="#">service center locator</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a href="faq.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="orders.html">Track Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="refund.html">Refund &amp; Cancellation Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('mainmenu');
+    toggle?.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>

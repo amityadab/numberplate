@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <title>About - Number Plate Hub</title>
+  <meta name="description" content="About Number Plate Hub - Learn about our services and company.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/NumberPlateHub.css">
+</head>
+<body>
+  <header class="brandbar">
+    <div class="brand">
+      <div class="logo">NUMBER PLATE HUB</div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="wrap">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainmenu">☰</button>
+      <ul id="mainmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="installation.html">Installation</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main style="padding: 40px;">
+    <h1>About Number Plate Hub</h1>
+    <p>Welcome to Number Plate Hub, your trusted provider of high-quality vehicle registration plates.</p>
+    <p>We specialize in manufacturing and distributing various types of number plates that comply with local regulations.</p>
+    <p>Our mission is to provide reliable, durable, and regulation-compliant number plates for all types of vehicles.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <a href="faq.html">FAQ</a>
+      <a href="index.html">Home</a>
+      <a href="orders.html">Track Order</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="refund.html">Refund &amp; Cancellation Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('mainmenu');
+    toggle?.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
